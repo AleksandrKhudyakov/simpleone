@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__top">
+                <div class="header__panel hidden visible-mobile">
+                    <button class="header__panel-icon">
+                        <img class="header__panel-img" src="./images/sidebar.svg">
+                    </button>
+                </div>
+                <a class="header__logo logo hidden-mobile" href="#"><img class="logo__img" src="./images/logo.png"
+                        width="174" height="24" alt="Логотип компании"></a>
+                <div class="header__search search hidden-mobile">
+                    <input class="header__search-input search__input" type="search" placeholder="Поиск">
+                    <button class="header__search-button search__button" type="button"></button>
+                </div>
+                <div class="header__profile">
+                    <img class="header__profile-image" src="./images/Avatar.jpg" width="32" height="32"
+                        alt="Фото профиля">
+                    <span class="header__profile-name hidden-mobile">Максим Галактионов</span>
+                    <button class="header__profile-setting button" type="button"></button>
+                </div>
+            </div>
+
+            <div class="header__bottom">
+                <div class="header__task task">
+                    <div class="task__create">
+                        <span class="task__title">Подзадача</span>
+                        <button class="task__create button">Создать</button>
+                    </div>
+                    <div class="task__save hidden-mobile">
+                        <button class="task__save button button--primary">Сохранить</button>
+                        <button class="task__exit button">Сохранить и выйти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-inner">
+        <aside class="aside">
+
+            <div class="aside__panel">
+                <button class="aside__panel-icon"><img class="aside__panel-img" src="./images/sidebar.svg"></button>
+                <button class="aside__panel-icon"><img class="aside__panel-img" src="./images/star.svg"></button>
+            </div>
+
+            <div class="aside__right">
+                <div class="aside__header">
+                    <div class="aside__search search">
+                        <input class="aside__search-input search__input" type="search" placeholder="Поиск по меню">
+                        <button class="aside__search-button search__button" type="button"></button>
+                    </div>
+                    <button class="aside__pin-button button" type="button"></button>
+                </div>
+                <nav class="aside__menu">
+                    <ul class="aside__menu-list">
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Моя работа</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Структура портала</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Отсутствие на рабочем месте
+                        </li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Портфель услуг</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Дашборды</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Доски задач</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Обращения</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>События</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Инциденты</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Проблемы</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Дашборды</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Доски задач</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Обращения</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>События</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Инциденты</li>
+                        <li class="aside__menu-item"><a class="aside__menu-link" href=""></a>Проблемы</li>
+                    </ul>
+                </nav>
+            </div>
+
+        </aside>
+        <main class="main">
+            <h2 class="main__title">STSK0004783 На инциденте, запросе, проблеме, в статусе закрыто некоторые поля
+                остаются редактируемыми для агента если он
+                Caller</h2>
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__group">
+                        <input class="form__input" type="text" id='theme' name='theme' required>
+                        <label class="form__label" for="theme">Тема</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='status' name='status'>
+                        </div>
+                        <label class="form__label" for="status">Статус</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" id='descr' name='descr'>
+                        <label class="form__label" for="descr">Описание</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='Product' name='Product'>
+                            <button class="form__button-plus button"></button>
+                        </div>
+                        <label class="form__label" for="Product">Продукт</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" id='note' name='note' required>
+                        <label class="form__label" for="note">Рабочие заметки</label>
+                    </div>
+                    <div class="form__group">
+                        <input class="form__input" type="text" id='priority' name='priority'>
+                        <label class="form__label" for="priority">Приоритет</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='responsible' name='responsible'>
+                                <span class="form__tag">
+                                    Константин Константинопольский
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="responsible">Ответственный</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='group' name='group'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="group">Ответственный</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='comment' name='comment'>
+                        <label class="form__label" for="comment">Комментарии</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='group' name='group'>
+                                <span class="form__tag">
+                                    Андрей Пивоваров
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Максим Галактионов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Алла Лин
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Константин Константинопольский Константинович
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Игорь Иванченко
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Юлия Эйчаровна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Артём Подпрыгайко-Саппортов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Илья Вазнец
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Михаил Вортенов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Наталья Нашевна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Евгения Итамовна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Алиса Киральчук
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="group">Ответственный</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='open' name='open'>
+                            <button class="form__button-calendar button"></button>
+                        </div>
+                        <label class="form__label" for="open">Когда открыто</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='create' name='create'>
+                            <button class="form__button-calendar button"></button>
+                        </div>
+                        <label class="form__label" for="create">Когда создано</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='Wopen' name='Wopen'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="Wopen">Кем открыто</label>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='Wcreate' name='Wcreate'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="Wcreate">Кем создано</label>
+                    </div>
+
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="myModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__task task">
+                <div class="task__create">
+                    <span class="task__title modal__task-title">Подзадача</span>
+                </div>
+                <div class="task__save ">
+                    <button class="task__save button button--primary">Сохранить</button>
+                    <button class="task__cancel button">Отменить</button>
+                </div>
+            </div>
+            <h2 class="modal__title">Новая запись</h2>
+            <form class="form">
+                <div class="form__inner">
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='theme' name='theme' required>
+                        <label class="form__label" for="theme">Тема</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='status' name='status'>
+                        </div>
+                        <label class="form__label" for="status">Статус</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='descr' name='descr'>
+                        <label class="form__label" for="descr">Описание</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='Product' name='Product'>
+                            <button class="form__button-plus button"></button>
+                        </div>
+                        <label class="form__label" for="Product">Продукт</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='note' name='note' required>
+                        <label class="form__label" for="note">Рабочие заметки</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='priority' name='priority'>
+                        <label class="form__label" for="priority">Приоритет</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='responsible' name='responsible'>
+                                <span class="form__tag">
+                                    Константин Константинопольский
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="responsible">Ответственный</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='group' name='group'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="group">Ответственный</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <input class="form__input" type="text" id='comment' name='comment'>
+                        <label class="form__label" for="comment">Комментарии</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='group' name='group'>
+                                <span class="form__tag">
+                                    Андрей Пивоваров
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Максим Галактионов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Алла Лин
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Константин Константинопольский Константинович
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Игорь Иванченко
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Юлия Эйчаровна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Артём Подпрыгайко-Саппортов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Илья Вазнец
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Михаил Вортенов
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Наталья Нашевна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Евгения Итамовна
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <span class="form__tag">
+                                    Алиса Киральчук
+                                    <span class="form__tag-close"></span>
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="group">Ответственный</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='open' name='open'>
+                            <button class="form__button-calendar button"></button>
+                        </div>
+                        <label class="form__label" for="open">Когда открыто</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <input class="form__input" type="text" id='create' name='create'>
+                            <button class="form__button-calendar button"></button>
+                        </div>
+                        <label class="form__label" for="create">Когда создано</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='Wopen' name='Wopen'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="Wopen">Кем открыто</label>
+                    </div>
+                    <div class="form__group form__group-big">
+                        <div class="form__control">
+                            <div class="form__input form__badge" type="text" id='Wcreate' name='Wcreate'>
+                                <span class="form__tag">
+                                    Support group
+                                </span>
+                                <button class="form__badge-delete"></button>
+                            </div>
+                            <button class="form__button-plus button"></button>
+                            <button class="form__button-search button"></button>
+                        </div>
+                        <label class="form__label" for="Wcreate">Кем создано</label>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+<script src="/javascript/main.js"></script>
+
+</html>

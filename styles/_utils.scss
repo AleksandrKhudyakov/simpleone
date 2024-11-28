@@ -1,0 +1,25 @@
+.header--fixed {
+    box-shadow: 0px 4px 4px 0px #0000000A;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile {
+        display: block !important;
+    }
+}

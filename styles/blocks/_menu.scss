@@ -1,0 +1,23 @@
+.aside__menu {
+    &-list {}
+
+    &-item {
+        position: relative;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 16px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 16px;
+            top: 12px;
+            width: 10px;
+            height: 10px;
+            background-image: url(/images/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

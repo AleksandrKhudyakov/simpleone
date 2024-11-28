@@ -1,0 +1,112 @@
+.form {
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+    }
+
+    &__group {
+        width: calc(50% - 8px);
+        gap: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+
+        @include tablet {
+            width: 100%;
+        }
+    }
+
+    &__group-big {
+        width: 100%;
+    }
+
+    &__label {
+        font-weight: 600;
+    }
+
+    &__control {
+        display: flex;
+        gap: 5px;
+    }
+
+    &__button-plus {
+        background-image: url(/images/plus.svg);
+    }
+
+    &__button-search {
+        background-image: url(/images/search-big.svg);
+    }
+
+    &__button-calendar {
+        background-image: url(/images/calendar.svg);
+    }
+
+    &__badge {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 4px;
+        padding: 4px 20px 4px 6px;
+
+        &-delete {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            background-image: url(/images/close.svg);
+            background-color: transparent;
+            width: 16px;
+            height: 16px;
+            border: none;
+        }
+    }
+
+    &__tag {
+        display: inline-block;
+        background-color: var(--color-blue-light);
+        padding: 2px 8px;
+        border-radius: var(--border-radius);
+        border: 1px solid var(--color-blue-dark);
+        color: var(--color-dark);
+        position: relative;
+
+        @include mobile {
+            position: relative;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 158px;
+            padding: 2px 28px 2px 8px;
+        }
+
+        &-close {
+            background-image: url(/images/x.svg);
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            vertical-align: sub;
+            position: relative;
+            right: -4px;
+
+            @include mobile {
+                position: absolute;
+                right: 8px;
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+input[required]+label::before {
+    content: "*";
+    color: var(--color-required);
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 4px;
+
+}
